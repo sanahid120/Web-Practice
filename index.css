@@ -2,10 +2,112 @@ p {
     background-image: url("gradient_bg.png");
   background-repeat: repeat-x; /* no-repeat, repeat, repeat-x, repeat-y */
   background-position: right top; /* top left, top center, top right, center left, center center, center right, bottom left, bottom center, bottom right */
-
+    display: block; /* inline, block, inline-block, none */
+    display: flex,grid,inline-flex,inline-grid; /* flex, grid, inline-flex, inline-grid */
 }
- 
+ .p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 body {
   background-color: lightblue;
 }
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
  
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+p {
+  margin: 25px 50px 75px 100px;
+   margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+div {
+    padding: 25px 50px 75px 100px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  height: 200px; /* height of the element */
+  width: 200px; /* auto, length, percentage, inherit: the width will be inherited from the parents */
+}
+
+div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+/*
+ 320px (width of content area)
++ 20px (left padding + right padding)
++ 10px (left border + right border)
+= 350px (total width)
+
+  50px (height of content area)
++ 20px (top padding + bottom padding)
++ 10px (top border + bottom border)
+= 80px (total height)*/
+
+p {
+  margin: 30px;
+  padding: 5px;
+  background: yellow;
+  border: 1px solid black;
+  outline: 3px solid red;
+  outline-offset: 15px;
+}
+
+ p{
+    text-align: center; 
+    text-aligin-last: center; /*right, left, center, justify, start, end*/
+    direction: rtl; /* ltr, rtl, initial, inherit */
+    unicode-bidi: bidi-override; /* normal, embed, bidi-override, initial, inherit */ /* what is bdi-override? */
+    /* bdi override: the text will be displayed in the opposite direction of the surrounding text */
+
+    text-decoration-line: underline; /* overline, line-through, none, initial, inherit */
+    text-decoration: dashed;
+    text-decoration-color: red; /* color of the text decoration */
+
+
+
+ }
