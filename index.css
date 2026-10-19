@@ -1,0 +1,11 @@
+p {
+    background-image: url("gradient_bg.png");
+  background-repeat: repeat-x; /* no-repeat, repeat, repeat-x, repeat-y */
+  background-position: right top; /* top left, top center, top right, center left, center center, center right, bottom left, bottom center, bottom right */
+
+}
+ 
+body {
+  background-color: lightblue;
+}
+ 
